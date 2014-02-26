@@ -1,0 +1,33 @@
+{
+  "name": "diff-buf",
+  "version": "0.0.0",
+  "description": "compare two buffer in node.js and output the diff",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dead-horse/diff-buf.git"
+  },
+  "keywords": [
+    "diff",
+    "buffer",
+    "color",
+    "test",
+    "util"
+  ],
+  "author": "dead_horse <dead_horse@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dead-horse/diff-buf/issues"
+  },
+  "homepage": "https://github.com/dead-horse/diff-buf",
+  "dependencies": {
+    "colors": "0.6.2",
+    "diff": "1.0.8"
+  },
+  "devDependencies": {
+
+  }
+}
