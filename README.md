@@ -22,7 +22,7 @@ console.log(str);
 ```
 =>
 
-[!diff](http://ww1.sinaimg.cn/large/69c1d4acgw1edwv9s7b6oj206e00jwea.jpg)
+![diff](http://ww1.sinaimg.cn/large/69c1d4acgw1edwv9s7b6oj206e00jwea.jpg)
 
 ```js
 var diff = require('diff-buf');
