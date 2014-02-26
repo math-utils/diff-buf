@@ -49,8 +49,8 @@ function parseDiff(diffs, base) {
 
 function padding(s, base) {
   if (base === 16 && s.length === 1) {
-      return '0' + s;
-    }
+    return '0' + s;
+  }
   if (base === 10 && s.length === 1) {
     return '00' + s;
   }
@@ -94,9 +94,3 @@ module.exports = function (src, cmp, options) {
   }
   return inspect(diffs, base);
 };
-
-
-var buf1 = new Buffer([10, 21, 44, 33, 120]);
-var buf2 = new Buffer([10, 22, 35, 54, 120]);
-
-console.log(module.exports(buf1, buf2, {base: 10}));
