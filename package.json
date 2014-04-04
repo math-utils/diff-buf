@@ -4,7 +4,7 @@
   "description": "compare two buffer in node.js and output the diff",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node demo"
   },
   "repository": {
     "type": "git",
