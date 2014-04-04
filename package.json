@@ -1,6 +1,6 @@
 {
   "name": "diff-buf",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "compare two buffer in node.js and output the diff",
   "main": "index.js",
   "scripts": {
