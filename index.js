@@ -84,8 +84,12 @@ module.exports = function (src, cmp, options) {
   src.slice(0, length);
   cmp.slice(0, length);
 
-  var srcStr = src.toJSON().join(' ');
-  var cmpStr = cmp.toJSON().join(' ');
+  // change on 0.11+ @see http://nodejs.org/docs/v0.11.12/api/buffer.html#buffer_buf_tojson
+  var srcJSON = src.toJSON();
+  var cmpJSON = cmp.toJSON();
+
+  var srcStr = (srcJSON.data || srcJSON).join(' ');
+  var cmpStr = (cmpJSON.data || cmpJSON).join(' ');
 
   var diffs = jsdiff.diffWords(srcStr, cmpStr);
   diffs = parseDiff(diffs);
