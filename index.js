@@ -79,10 +79,9 @@ module.exports = function (src, cmp, options) {
   options = options || {};
   merge(options, defaultOptions);
   var base = options.base === 10 ? 10 : 16; // only support 10 or 16
-  var length = Math.max(src.length, cmp.length, options.length);
 
-  src.slice(0, length);
-  cmp.slice(0, length);
+  src = src.slice(0, options.length);
+  cmp = cmp.slice(0, options.length);
 
   // change on 0.11+ @see http://nodejs.org/docs/v0.11.12/api/buffer.html#buffer_buf_tojson
   var srcJSON = src.toJSON();
