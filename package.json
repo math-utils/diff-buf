@@ -24,11 +24,11 @@
   },
   "homepage": "https://github.com/dead-horse/diff-buf",
   "dependencies": {
-    "colors": "0.6.2",
-    "diff": "1.0.8"
+    "colors": "1.1.2",
+    "diff": "2.2.1"
   },
-  "devDependencies": {
-
-  },
-  "fiels": ["index.js"]
+  "devDependencies": {},
+  "fiels": [
+    "index.js"
+  ]
 }
