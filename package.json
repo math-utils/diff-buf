@@ -25,7 +25,7 @@
   "homepage": "https://github.com/dead-horse/diff-buf",
   "dependencies": {
     "colors": "0.6.2",
-    "diff": "1.0.8"
+    "diff": "4.0.4"
   },
   "devDependencies": {
 
